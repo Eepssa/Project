@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+       body{
+        background-color:#eee;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+
+       }
+
+       .height{
+        height: 100vh;
+       }
+       
+
+       .search{
+       position: relative;
+       box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+         
+       }
+
+       .search input{
+
+        height: 60px;
+        text-indent: 25px;
+        /* border: 2px solid #d6d4d4; */
+
+
+       }
+
+
+       .search input:focus{
+
+        box-shadow: none;
+        border: 2px solid black;
+
+
+       }
+
+       .search button{
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        color:white;
+        background-color:black;
+
+       }
+       .header {
+        display: flex; /* Use flexbox */
+        align-items: center; /* Align items vertically */
+      }
+      
+      /* Title styling */
+      .header h3 {
+        margin-right: 20px; /* Add some margin to separate the title from the switch */
+      }
+      
+      /* Switch container styling */
+      .switch-container {
+        display: flex; /* Use flexbox */
+        align-items: center; /* Align items vertically */
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch-container input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      /* The slider */
+      .switch-container .slider {
+        position: relative;
+        cursor: pointer;
+        width: 60px;
+        height: 34px;
+        margin-right: 10px; /* Add some margin to separate the switch from the following text */
+        background-color: #000000;
+        border-radius: 34px;
+      }
+      
+      /* Slider styling when checked */
+      .switch-container input:checked + .slider {
+        background-color: #000000;
+      }
+      
+      /* Slider handle */
+      .switch-container .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: rgb(255, 255, 255);
+        transition: .4s;
+        border-radius: 50%;
+      }
+      
+      /* Slider styling when checked */
+      .switch-container input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+      
+      /* Additional styling for the text "TODAY" and "THIS WEEK" */
+      .header h4 {
+        margin-right: 20px; /* Add some margin to separate the text from the switch */
+      }
+
+
+
+
+
+
+      

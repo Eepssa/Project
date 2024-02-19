@@ -1,0 +1,56 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-3 mb-lg-5">
+            <div class="overflow-hidden card table-nowrap table-card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Movies</h5>
+                    <button class="btn btn-light btn-sm" (click)="onClick()">Add Movie</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead class="small text-uppercase bg-body text-muted">
+                            <tr>
+                                <th>SLNum</th>
+                                <th>Name</th>
+                                <th>Price</th>                                
+                                <th class="text-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle" *ngFor="let book of bookdata;  index as i">
+                                 
+                                <td>{{i+1}}</td>
+                                <td> {{book.name}}</td>
+                                <td>{{book.price}}</td>
+
+                                
+                                <!-- <a class="nav-link"  [routerLink]="['/view', book.id]">View</a> -->
+                                 <a class="nav-link"  [routerLink]="['/view', book.id]">
+                                    <i class="fa-solid fa-eye" ></i>
+                                 </a> 
+                                 
+                                 <!-- <a class="nav-link"  [routerLink]="['/edit', book.id]">Edit</a> -->
+                                 <a class="nav-link"  [routerLink]="['/edit', book.id]">
+                                    <i class="fas fa-edit" ></i>
+                                 </a> 
+
+                                <!-- <a href="/"  (click)="delete(book.id)">Delete</a> -->
+                                <a href="/"  (click)="delete(book.id)">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                                
+                                
+                            </tr>
+                           
+                           
+                            
+                             
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

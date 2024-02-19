@@ -1,0 +1,49 @@
+   
+      
+  .weather-container {
+  background-image: url('https://www.motivatemd.com/wp-content/uploads/2019/01/app-background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
+  padding: 20px;
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to next line if space is insufficient */
+}
+
+.column {
+  flex: 1; /* Each column takes equal space */
+  padding: 10px; /* Add spacing between columns */
+}
+
+.weather1, .weather2 {
+   
+  padding: 20px;
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  margin-bottom: 20px; /* Add margin between cards */
+}
+
+.weather1{
+  background-color: lightyellow; 
+}
+.weather2{
+  background-color: lightsalmon; 
+}
+.weather1 p, .weather2 p {
+  margin: 0; /* Remove default margin for paragraphs */
+}
+
+img {
+  display: block; /* Ensure images are block elements */
+  margin: auto; /* Center-align images horizontally */
+}
