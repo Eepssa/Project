@@ -1,0 +1,15 @@
+{
+  "name": "jobposting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongoose.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/nodejs": "^2.2.0",
+    "mongoose": "^8.2.0"
+  }
+}

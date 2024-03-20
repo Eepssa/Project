@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@emailjs/nodejs": "^2.2.0",
+    "axios": "^1.6.7"
+  }
+}

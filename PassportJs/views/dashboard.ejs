@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    /* Style for the circular box */
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      /* Positioning */
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    /* Additional styles for the body */
+    body {
+      margin: 0;
+      padding: 20px; /* Add some padding to keep content away from the circle */
+    }
+  </style>
+</head>
+<body>
+  <div class="circle" id="userCircle">Hover over me</div>
+  <h1 style="text-align: center;">Welcome to Dashboard</h1>
+
+  <script>
+    const circle = document.getElementById('userCircle');
+    circle.addEventListener('mouseenter', () => {
+      circle.textContent = '<%= user.email %>';
+    });
+    circle.addEventListener('mouseleave', () => {
+      circle.textContent = 'Hover over me';
+    });
+  </script>
+</body>
+</html>
