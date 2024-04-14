@@ -1,28 +1,30 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
+<section style="background-color: #2779e2;">
+<br>
+<br>
 <div class="container">
     <div class="row">
         <div class="col-12 mb-3 mb-lg-5">
             <div class="overflow-hidden card table-nowrap table-card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Movies</h5>
-                    <button class="btn btn-light btn-sm" (click)="onClick()">Add Movie</button>
+                    <h5 class="mb-0">Book</h5>
+                    <button class="btn btn-light btn-sm" (click)="onClick()">Add Book</button>
                 </div>
                 <div class="table-responsive">
                     <table class="table mb-0">
                         <thead class="small text-uppercase bg-body text-muted">
                             <tr>
-                                <th>SLNum</th>
+                                <th>SL. Num</th>
                                 <th>Name</th>
                                 <th>Price</th>                                
-                                <th class="text-end">Action</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="align-middle" *ngFor="let book of bookdata;  index as i">
                                  
                                 <td>{{i+1}}</td>
-                                <td> {{book.name}}</td>
+                                <td>{{book.name}}</td>
                                 <td>{{book.price}}</td>
 
                                 
@@ -54,3 +56,6 @@
         </div>
     </div>
 </div>
+<br>
+<br>
+</section>
